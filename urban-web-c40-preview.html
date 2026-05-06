@@ -28,77 +28,67 @@
 
     /* PAGE HEADER */
     .page-header{padding:160px 48px 80px;background:var(--dark);border-bottom:1px solid rgba(255,255,255,0.06);}
-    .page-header-inner{max-width:var(--max);margin:0 auto;}
-    .eyebrow{font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:20px;display:block;}
+    .page-header-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+    .eyebrow{font-size:11px;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--blue);margin-bottom:20px;display:block;}
     .page-header h1{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(56px,8vw,108px);line-height:0.9;color:#fff;margin-bottom:24px;max-width:860px;}
-    .page-header p{font-size:18px;font-weight:300;color:rgba(255,255,255,0.5);max-width:520px;line-height:1.65;}
+    .page-header p{font-size:17px;font-weight:300;color:rgba(255,255,255,0.5);max-width:520px;line-height:1.65;}
 
-    /* WHAT SECTION */
-    .what-section{background:#fff;padding:96px 0;}
-    .what-inner{max-width:var(--max);margin:0 auto;padding:0 48px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
-    .section-heading{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(44px,6vw,80px);line-height:0.92;margin-bottom:24px;}
-    .what-text .section-heading{color:#111;}
-    .what-text p{font-size:15px;font-weight:300;color:#555;line-height:1.8;margin-bottom:18px;}
-    .what-standout{font-size:18px;color:#111;font-weight:500;border-left:2px solid var(--blue);padding-left:18px;margin:24px 0;}
-
-    /* Architecture diagram */
-    .arch-diagram{border:1px solid rgba(0,0,0,0.1);}
-    .arch-layer{padding:20px 24px;border-bottom:1px solid rgba(0,0,0,0.08);}
-    .arch-layer-label{font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#999;margin-bottom:10px;}
+    /* Architecture diagram — on dark background */
+    .arch-diagram{border:1px solid rgba(255,255,255,0.1);}
+    .arch-layer{padding:20px 24px;border-bottom:1px solid rgba(255,255,255,0.08);}
+    .arch-layer-label{font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-bottom:10px;}
     .arch-chips{display:flex;flex-wrap:wrap;gap:6px;}
-    .arch-chip{font-size:11px;color:#555;border:1px solid rgba(0,0,0,0.14);padding:4px 10px;letter-spacing:0.02em;}
+    .arch-chip{font-size:11px;color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.16);padding:4px 10px;letter-spacing:0.02em;}
     .arch-chip.active{color:var(--blue);border-color:var(--blue);}
-    .arch-mid{background:var(--dark);padding:24px;display:flex;justify-content:space-between;align-items:center;}
+    .arch-mid{background:rgba(255,255,255,0.07);padding:24px;display:flex;justify-content:space-between;align-items:center;}
     .arch-mid-name{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:32px;color:#fff;letter-spacing:0.04em;}
     .arch-mid-badge{font-size:11px;font-weight:400;color:rgba(255,255,255,0.45);letter-spacing:0.06em;text-align:right;line-height:1.5;}
-    .arch-bot{padding:20px 24px;background:#f4f6f8;}
-    .arch-bot-label{font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#999;margin-bottom:6px;}
-    .arch-bot-name{font-size:15px;font-weight:500;color:#111;margin-bottom:4px;}
-    .arch-bot-desc{font-size:12px;color:#777;line-height:1.6;}
+    .arch-bot{padding:20px 24px;background:rgba(255,255,255,0.03);}
+    .arch-bot-label{font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:6px;}
+    .arch-bot-name{font-size:15px;font-weight:500;color:rgba(255,255,255,0.85);margin-bottom:4px;}
+    .arch-bot-desc{font-size:12px;color:rgba(255,255,255,0.42);line-height:1.6;margin-bottom:10px;}
+    .arch-bot-link{font-size:11px;font-weight:500;color:var(--blue);letter-spacing:0.04em;transition:color 0.15s;}
+    .arch-bot-link:hover{color:#5bb3f5;}
     .arch-connector{display:flex;align-items:center;justify-content:center;padding:10px 24px;gap:8px;}
-    .arch-connector-line{flex:1;height:1px;background:rgba(0,0,0,0.1);}
+    .arch-connector-line{flex:1;height:1px;background:rgba(255,255,255,0.1);}
     .arch-connector-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);white-space:nowrap;}
 
     /* On-fabric offerings layer in diagram */
-    .arch-offerings{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid rgba(0,0,0,0.08);}
-    .arch-offering{padding:16px 20px;border-right:1px solid rgba(0,0,0,0.08);text-decoration:none;display:flex;flex-direction:column;gap:3px;transition:background 0.15s;background:#fafbfc;}
+    .arch-offerings{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid rgba(255,255,255,0.08);}
+    .arch-offering{padding:16px 20px;border-right:1px solid rgba(255,255,255,0.08);text-decoration:none;display:flex;flex-direction:column;gap:3px;transition:background 0.15s;background:rgba(255,255,255,0.03);}
     .arch-offering:last-child{border-right:none;}
-    .arch-offering:hover{background:#eef4ff;}
+    .arch-offering:hover{background:rgba(0,120,206,0.15);}
     .arch-offering-tag{font-size:9px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue);}
-    .arch-offering-name{font-size:13px;font-weight:600;color:#111;}
-    .arch-offering-desc{font-size:10px;color:#777;line-height:1.5;}
-
-    .nfh-callout{max-width:var(--max);margin:0 auto;padding:36px 48px;background:#f4f6f8;border-left:3px solid var(--blue);margin-top:40px;}
-    .nfh-callout p{font-size:14px;color:#444;line-height:1.7;margin-bottom:8px;}
-    .nfh-callout a{font-size:13px;font-weight:500;color:var(--blue);}
+    .arch-offering-name{font-size:13px;font-weight:600;color:rgba(255,255,255,0.88);}
+    .arch-offering-desc{font-size:10px;color:rgba(255,255,255,0.4);line-height:1.5;}
     .btn-primary{background:var(--blue);color:#fff;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:14px 28px;transition:background 0.15s;display:inline-flex;align-items:center;gap:8px;}
     .btn-primary:hover{background:#005fa8;}
 
     /* HOW SECTION */
-    .how-section{background:var(--dark);padding:96px 0;}
+    .how-section{background:#fff;padding:96px 0;}
     .how-inner{max-width:var(--max);margin:0 auto;padding:0 48px;}
-    .how-header{margin-bottom:72px;border-bottom:1px solid rgba(255,255,255,0.07);padding-bottom:48px;}
-    .how-header h2{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(52px,7vw,96px);line-height:0.9;color:#fff;margin-bottom:16px;}
-    .how-header p{font-size:17px;font-weight:300;color:rgba(255,255,255,0.45);max-width:380px;line-height:1.6;}
-    .statement{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:64px 0;border-bottom:1px solid rgba(255,255,255,0.07);}
+    .how-header{margin-bottom:40px;border-bottom:1px solid rgba(0,0,0,0.08);padding-bottom:40px;}
+    .how-header h2{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(52px,7vw,96px);line-height:0.9;color:#111;margin-bottom:16px;}
+    .how-header p{font-size:17px;font-weight:300;color:#777;max-width:380px;line-height:1.6;}
+    .statement{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:64px 0;border-bottom:1px solid rgba(0,0,0,0.08);}
     .statement--flip{direction:rtl;} .statement--flip>*{direction:ltr;}
-    .stmt-num{font-family:var(--font-display);font-weight:900;font-size:72px;line-height:1;color:rgba(255,255,255,0.22);margin-bottom:4px;}
-    .stmt-headline{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(40px,5vw,68px);line-height:0.9;color:#fff;margin-bottom:16px;}
-    .stmt-body{font-size:15px;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.75;}
+    .stmt-num{font-family:var(--font-display);font-weight:900;font-size:72px;line-height:1;color:rgba(0,0,0,0.07);margin-bottom:4px;}
+    .stmt-headline{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(40px,5vw,68px);line-height:0.9;color:#111;margin-bottom:16px;}
+    .stmt-body{font-size:15px;font-weight:300;color:#555;line-height:1.75;}
     .stmt-canvas{background:#050e1a;border:1px solid rgba(0,120,206,0.18);}
     .how-canvas{width:100%;height:280px;display:block;}
     .how-cta{padding-top:64px;}
 
     /* ENABLES SECTION */
-    .enables-section{background:#fff;padding:96px 0;}
+    .enables-section{background:var(--dark);padding:96px 0;}
     .enables-inner{max-width:var(--max);margin:0 auto;padding:0 48px;}
     .enables-header{margin-bottom:44px;max-width:560px;}
-    .enables-header h2{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(44px,6vw,80px);line-height:0.9;color:#111;margin-bottom:16px;}
-    .enables-header p{font-size:16px;font-weight:300;color:#555;max-width:380px;line-height:1.7;}
-    .enables-list{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-left:1px solid rgba(0,0,0,0.08);}
-    .enables-list-item{padding:36px 36px 36px 36px;border-right:1px solid rgba(0,0,0,0.08);border-top:1px solid rgba(0,0,0,0.08);}
+    .enables-header h2{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(44px,6vw,80px);line-height:0.9;color:#fff;margin-bottom:16px;}
+    .enables-header p{font-size:16px;font-weight:300;color:rgba(255,255,255,0.45);max-width:380px;line-height:1.7;}
+    .enables-list{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-left:1px solid rgba(255,255,255,0.08);}
+    .enables-list-item{padding:36px 36px 36px 36px;border-right:1px solid rgba(255,255,255,0.08);border-top:1px solid rgba(255,255,255,0.08);}
     .enables-item-label{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;display:block;}
-    .enables-list-item p{font-size:15px;font-weight:300;color:#555;line-height:1.8;}
+    .enables-list-item p{font-size:15px;font-weight:300;color:rgba(255,255,255,0.45);line-height:1.8;}
 
     /* ON THE FABRIC SECTION */
     .fabric-section{background:#050d18;padding:96px 0;border-top:1px solid rgba(0,120,206,0.18);}
@@ -108,12 +98,12 @@
     .fabric-intro h2{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(44px,6vw,80px);line-height:0.92;color:#fff;margin-bottom:20px;}
     .fabric-intro p{font-size:16px;font-weight:300;color:rgba(255,255,255,0.45);max-width:580px;line-height:1.75;}
     .fabric-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(255,255,255,0.08);}
-    .fabric-card{padding:48px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;}
+    .fabric-card{padding:36px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;}
     .fabric-card:last-child{border-right:none;}
     .fabric-card-eyebrow{margin-bottom:24px;}
     .fabric-logo{height:44px;width:auto;display:block;opacity:0.88;}
     .fabric-card-name{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(36px,4vw,56px);line-height:0.9;color:#fff;margin-bottom:16px;}
-    .fabric-card-tagline{font-size:14px;font-weight:300;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.07);padding-bottom:24px;}
+    .fabric-card-tagline{font-size:14px;font-weight:300;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:20px;}
     .fabric-card-points{display:flex;flex-direction:column;gap:0;flex:1;margin-bottom:32px;}
     .fabric-card-point{padding:18px 0;border-top:1px solid rgba(255,255,255,0.07);}
     .fabric-card-point:first-child{border-top:none;padding-top:0;}
@@ -169,8 +159,9 @@
     @media(max-width:900px){
       .nav{padding:0 24px;} .nav-links{display:none;}
       .page-header{padding:120px 24px 56px;}
-      .what-inner,.contact-inner{grid-template-columns:1fr;gap:40px;padding:0 24px;}
-      .what-section,.how-section,.enables-section,.fabric-section,.contact{padding:64px 0;}
+      .page-header-inner{grid-template-columns:1fr;gap:40px;}
+      .contact-inner{grid-template-columns:1fr;gap:40px;padding:0 24px;}
+      .how-section,.enables-section,.fabric-section,.contact{padding:64px 0;}
       .how-inner,.enables-inner,.fabric-inner,.partners-inner{padding:0 24px;}
       .statement{grid-template-columns:1fr;gap:32px;} .statement--flip{direction:ltr;}
       .enables-inner{padding:0 24px;}.enables-list{grid-template-columns:1fr;}
@@ -179,7 +170,6 @@
       .footer-inner{padding:0 24px;flex-direction:column;gap:20px;align-items:flex-start;}
       .footer-nav{flex-direction:column;gap:10px;align-items:flex-start;}
       .footer-bottom{padding:14px 24px 0;}
-      .nfh-callout{margin:40px 24px 0;}
       .fabric-card{padding:32px 24px;}
     }
   </style>
@@ -200,20 +190,10 @@
 
   <div class="page-header">
     <div class="page-header-inner">
-      <span class="eyebrow">Urban Web</span>
-      <h1>The open layer that<br>connects how a city moves.</h1>
-      <p>The web connected information. GPS connected position. Mobile networks connected devices. Urban Web connects how a city moves.</p>
-    </div>
-  </div>
-
-  <!-- SECTION 1: WHAT IS URBAN WEB -->
-  <section class="what-section">
-    <div class="what-inner">
-      <div class="what-text">
-        <h2 class="section-heading">A shared infrastructure.<br>Owned by no one.</h2>
-        <p>It is a shared standard that any mobility service can adopt once, making it reachable by every other service on the network.</p>
-        <div class="what-standout">Not a platform, not an intermediary — a shared standard. Like HTTP for the web, but for how a city moves.</div>
-        <p>Cities that build on this standard don't just move people more efficiently. They create the conditions for culture, climate action, economic opportunity, and ideas that haven't yet been imagined to find each other.</p>
+      <div>
+        <span class="eyebrow">Urban Web</span>
+        <h1>Infrastructure of connections for city mobility.</h1>
+        <p>Enabling any platform or service to discover, negotiate, and transact value across city mobility, creating the conditions for culture, climate action, economic opportunity, and ideas that haven't yet been imagined.</p>
       </div>
       <div>
         <div class="arch-diagram">
@@ -266,19 +246,13 @@
           <div class="arch-bot">
             <div class="arch-bot-label">Foundation</div>
             <div class="arch-bot-name">The NFH Fabric</div>
-            <div class="arch-bot-desc">Global decentralised infrastructure for open peer-to-peer value exchange.</div>
+            <div class="arch-bot-desc">Urban Web is built on the NFH Fabric — a decentralised global infrastructure for open peer-to-peer value exchange.</div>
+            <a href="https://docs.nfh.global" target="_blank" rel="noopener" class="arch-bot-link">docs.nfh.global →</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="nfh-callout">
-      <p>Urban Web is built on the NFH Fabric, a decentralised global infrastructure for open peer-to-peer value exchange.</p>
-      <a href="https://docs.nfh.global" target="_blank" rel="noopener">docs.nfh.global →</a>
-    </div>
-    <div style="max-width:var(--max);margin:40px auto 0;padding:0 48px;">
-      <a href="use-cases-c40-preview.html" class="btn-primary">Explore use cases →</a>
-    </div>
-  </section>
+  </div>
 
   <!-- SECTION 2: HOW IT WORKS -->
   <section class="how-section">
@@ -318,9 +292,6 @@
           <p class="stmt-body">Urban Web defines how services talk. Like TCP/IP, it sits beneath every connection it enables.</p>
         </div>
         <div class="stmt-canvas"><canvas class="how-canvas" id="howCanvas4"></canvas></div>
-      </div>
-      <div class="how-cta">
-        <a href="use-cases-c40-preview.html" class="btn-primary">Explore use cases →</a>
       </div>
     </div>
   </section>
@@ -362,39 +333,11 @@
         <div class="fabric-card">
           <div class="fabric-card-eyebrow"><img src="brand_assets/vouch-logo-white.png" alt="Vouch Finance" class="fabric-logo fabric-logo--vouch"></div>
           <div class="fabric-card-tagline">Purpose-bound value for any programme. Money, credit, or equity issued with embedded rules — directed to the right recipient, usable in the right context, tracked to the right outcome.</div>
-          <div class="fabric-card-points">
-            <div class="fabric-card-point">
-              <span class="fabric-point-scenario">Employer Mobility</span>
-              <p class="fabric-point-body">Allowances spendable only on qualifying modes, automatically enforced across every Urban Web-connected operator — no bilateral agreements with providers needed</p>
-            </div>
-            <div class="fabric-card-point">
-              <span class="fabric-point-scenario">City Subsidy</span>
-              <p class="fabric-point-body">Government mobility subsidies bound to shared transit, redeemable across every operator in the city — open, not locked to a single provider</p>
-            </div>
-            <div class="fabric-card-point">
-              <span class="fabric-point-scenario">Carbon Credits</span>
-              <p class="fabric-point-body">Incentive credits that release only when a qualifying, low-carbon journey is verified by Urban Web data</p>
-            </div>
-          </div>
           <a href="https://vouch.finance" target="_blank" rel="noopener" class="fabric-card-link">vouch.finance →</a>
         </div>
         <div class="fabric-card">
           <div class="fabric-card-eyebrow"><img src="brand_assets/pincer-logo-white.png" alt="Pincer" class="fabric-logo fabric-logo--pincer"></div>
           <div class="fabric-card-tagline">Cryptographic trust and guarantee envelopes for any transaction. A seal that enforces itself and settles the moment proof conditions are met — no intermediary, no delay.</div>
-          <div class="fabric-card-points">
-            <div class="fabric-card-point">
-              <span class="fabric-point-scenario">Fleet Financing</span>
-              <p class="fabric-point-body">Releases in verified tranches as operators meet milestones on Urban Web — vehicles credentialed, routes active, journeys completed</p>
-            </div>
-            <div class="fabric-card-point">
-              <span class="fabric-point-scenario">Booking Guarantee</span>
-              <p class="fabric-point-body">Payment locks at confirmation and releases automatically when the route is completed — no intermediary, no delay</p>
-            </div>
-            <div class="fabric-card-point">
-              <span class="fabric-point-scenario">Energy Settlement</span>
-              <p class="fabric-point-body">Electric bus fleets trade energy without a utility intermediary — payment instant and atomic on smart meter proof</p>
-            </div>
-          </div>
           <a href="https://pincer.network" target="_blank" rel="noopener" class="fabric-card-link">pincer.network →</a>
         </div>
       </div>
