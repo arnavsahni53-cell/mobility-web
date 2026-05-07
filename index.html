@@ -109,14 +109,31 @@
     .footer-nav a:hover{color:#fff;}
     .footer-bottom{max-width:var(--max);margin:0 auto;padding:14px 48px 0;border-top:1px solid rgba(255,255,255,0.07);font-size:11px;color:rgba(255,255,255,0.25);}
 
+    /* Hamburger */
+    .nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;margin-left:12px;flex-shrink:0;}
+    .nav-burger span{width:22px;height:2px;background:#fff;display:block;transition:transform 0.25s,opacity 0.2s;}
+    .nav.open .nav-burger span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+    .nav.open .nav-burger span:nth-child(2){opacity:0;}
+    .nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+    .nav.open .nav-links{display:flex!important;position:fixed;top:72px;left:0;right:0;background:var(--dark);flex-direction:column;align-items:flex-start;padding:28px 24px;gap:20px;border-top:1px solid rgba(255,255,255,0.08);z-index:299;}
+
     @media(max-width:900px){
-      .nav{padding:0 24px;}.nav-links{display:none;}
-      .hero-content{padding:56px 24px;}
+      .nav{padding:0 24px;}
+      .nav-links{display:none;}
+      .nav-burger{display:flex;}
+      .btn-nav{display:none;}
+      .scroll-hint{display:none;}
+      .hero-content{padding:56px 24px 80px;}
+      .hero-headline{font-size:clamp(48px,13vw,80px);}
+      .hero-sub{font-size:15px;}
       .challenge{padding:64px 0;}.challenge-inner{grid-template-columns:1fr;gap:40px;padding:0 24px;}
-      .prec-header{padding:64px 24px 40px;}.prec-row{grid-template-columns:1fr;gap:10px;padding:36px 24px;}.prec-num{display:none;}
-      .prec-conclusion{padding:64px 24px;}
+      .section-heading{font-size:clamp(36px,9vw,52px);}
+      .prec-header{padding:64px 24px 40px;}.prec-header h2{font-size:clamp(40px,11vw,56px);}
+      .prec-row{grid-template-columns:1fr;gap:10px;padding:36px 24px;}.prec-num{display:none;}
+      .prec-conclusion{padding:64px 24px;}.prec-conclusion-headline{font-size:clamp(44px,12vw,64px);}
       .partners-inner,.contact-inner{padding:0 24px;}
       .partners-grid,.contact-inner{grid-template-columns:1fr;gap:40px;}
+      .contact-text h2{font-size:clamp(34px,9vw,44px);}
       .form-row{grid-template-columns:1fr;}
       .footer-inner{padding:0 24px;flex-direction:column;gap:20px;align-items:flex-start;}.footer-nav{flex-direction:column;gap:10px;align-items:flex-start;}.footer-bottom{padding:14px 24px 0;}
     }
@@ -135,6 +152,9 @@
         <a href="use-cases-c40-preview.html" class="nav-link">Use Cases</a>
       </div>
       <a href="#contact" class="btn-nav">Get in touch</a>
+      <button class="nav-burger" aria-label="Open menu" onclick="this.closest('nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 

@@ -184,25 +184,39 @@
     .fabric-card-link:hover{color:#5bb3f5;}
 
 
+    /* Hamburger */
+    .nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;margin-left:12px;flex-shrink:0;}
+    .nav-burger span{width:22px;height:2px;background:#fff;display:block;transition:transform 0.25s,opacity 0.2s;}
+    .nav.open .nav-burger span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+    .nav.open .nav-burger span:nth-child(2){opacity:0;}
+    .nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+    .nav.open .nav-links{display:flex!important;position:fixed;top:72px;left:0;right:0;background:var(--dark);flex-direction:column;align-items:flex-start;padding:28px 24px;gap:20px;border-top:1px solid rgba(255,255,255,0.08);z-index:299;}
+
     @media(max-width:900px){
-      .nav{padding:0 24px;}.nav-links{display:none;}
+      .nav{padding:0 24px;}
+      .nav-links{display:none;}
+      .nav-burger{display:flex;}
+      .btn-nav{display:none;}
       .page-header{padding:120px 24px 56px;}
+      .page-header h1{font-size:clamp(40px,11vw,56px);}
       .intro-strip{padding:28px 24px;}
       .uc-hdr{padding:0 24px;}
-      .uc-hdr-inner{grid-template-columns:64px 1fr auto;gap:0 20px;padding:20px 0;min-height:80px;}
-      .uc-ghost-num{font-size:56px;}
-      .uc-title{font-size:clamp(28px,7vw,44px);}
+      .uc-hdr-inner{grid-template-columns:56px 1fr;gap:0 16px;padding:20px 0;min-height:72px;}
+      .uc-ghost-num{font-size:48px;}
+      .uc-title{font-size:clamp(26px,7vw,36px);}
+      .uc-toggle{display:none;}
       .uc-scale{display:none;}
       .uc-panel-body{padding:32px 24px 48px;}
       .uc-content-grid{grid-template-columns:1fr;gap:32px;}
+      .demo-split{grid-template-columns:1fr;}
+      .contact-text h2{font-size:clamp(30px,8vw,40px);}
       .partners-inner,.contact-inner{padding:0 24px;}
       .partners-grid,.contact-inner,.form-row{grid-template-columns:1fr;}
-      .footer-inner{padding:0 24px;flex-direction:column;gap:20px;align-items:flex-start;}
-      .footer-nav{flex-direction:column;gap:10px;align-items:flex-start;}.footer-bottom{padding:14px 24px 0;}
-      .demo-split{grid-template-columns:1fr;}
       .fabric-grid{grid-template-columns:1fr;}
       .fabric-inner{padding:0 24px;}
       .fabric-card{padding:32px 24px;}
+      .footer-inner{padding:0 24px;flex-direction:column;gap:20px;align-items:flex-start;}
+      .footer-nav{flex-direction:column;gap:10px;align-items:flex-start;}.footer-bottom{padding:14px 24px 0;}
     }
   </style>
 </head>
@@ -217,6 +231,9 @@
         <a href="use-cases-c40-preview.html" class="nav-link active">Use Cases</a>
       </div>
       <a href="#contact" class="btn-nav">Get in touch</a>
+      <button class="nav-burger" aria-label="Open menu" onclick="this.closest('nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
