@@ -460,7 +460,12 @@
   (function(){
     const form=document.getElementById('contactForm'),success=document.getElementById('formSuccess');
     if(!form||!success)return;
-    form.addEventListener('submit',e=>{e.preventDefault();form.style.display='none';success.style.display='block';});
+    form.addEventListener('submit',async e=>{
+      e.preventDefault();
+      const data=Object.fromEntries(new FormData(form));
+      try{await fetch('https://script.google.com/macros/s/AKfycbwR4_QPHGYuMCoVY6WUCxamrhGKVKp_cZ6IFyyfXLLCHA5IAZOH_tCClJuWy16u0mM0Rg/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify(data)});}catch(err){}
+      form.style.display='none';success.style.display='block';
+    });
   })();
 
   /* Canvas utilities */
