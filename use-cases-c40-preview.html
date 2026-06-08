@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Use Cases — Urban Web</title>
+  <title>Use Cases — Mobility Web</title>
   <link rel="icon" type="image/svg+xml" href="brand_assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     .nav-inner{max-width:var(--max);width:100%;margin:0 auto;display:flex;align-items:center;padding:0 48px;}
     .nav-logo img{height:130px;filter:brightness(0) invert(1);}.nav-logo svg{height:48px;}
     .nav-links{display:flex;gap:28px;margin-left:auto;align-items:center;}
-    .nav-link{font-size:12px;font-weight:500;color:rgba(255,255,255,0.5);letter-spacing:0.08em;text-transform:uppercase;transition:color 0.15s;}
+    .nav-link{font-size:12px;font-weight:500;color:rgba(255,255,255,0.65);letter-spacing:0.08em;text-transform:uppercase;transition:color 0.15s;}
     .nav-link:hover,.nav-link.active{color:#fff;}
     .btn-nav{border:1px solid rgba(255,255,255,0.28);color:#fff;font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;padding:8px 20px;margin-left:16px;transition:background 0.15s,border-color 0.15s;}
     .btn-nav:hover{background:var(--blue);border-color:var(--blue);}
@@ -28,7 +28,7 @@
     .page-header-inner{max-width:var(--max);margin:0 auto;}
     .eyebrow{font-size:11px;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--blue);margin-bottom:20px;display:block;}
     .page-header h1{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(56px,8vw,108px);line-height:0.9;color:#fff;margin-bottom:24px;max-width:860px;}
-    .page-header p{font-size:17px;font-weight:300;color:rgba(255,255,255,0.5);max-width:520px;line-height:1.65;}
+    .page-header p{font-size:17px;font-weight:300;color:rgba(255,255,255,0.78);max-width:520px;line-height:1.65;}
 
     /* INTRO STRIP */
     .intro-strip{background:#fff;border-bottom:1px solid rgba(0,0,0,0.08);padding:36px 48px;}
@@ -52,10 +52,10 @@
     .uc-hdr-content{min-width:0;}
     .uc-tag{font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--uc-color,var(--blue));margin-bottom:8px;display:block;}
     .uc-title{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(36px,4.8vw,64px);line-height:0.92;color:#111;margin-bottom:10px;letter-spacing:-0.01em;}
-    .uc-summary{font-size:13px;font-weight:300;color:#888;max-width:440px;line-height:1.65;}
+    .uc-summary{font-size:13px;font-weight:300;color:#666;max-width:440px;line-height:1.65;}
 
     .uc-hdr-right{display:flex;flex-direction:column;align-items:flex-end;gap:14px;flex-shrink:0;}
-    .uc-scale{font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#c0c0c0;white-space:nowrap;}
+    .uc-scale{font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#888;white-space:nowrap;}
     .uc-toggle{width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(0,0,0,0.13);display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;color:rgba(0,0,0,0.25);transition:all 0.22s;user-select:none;}
     .uc-section.open>.uc-hdr .uc-toggle{background:var(--uc-color,var(--blue));border-color:var(--uc-color,var(--blue));color:#fff;transform:rotate(45deg);}
 
@@ -67,7 +67,7 @@
 
     /* SUB-TABS */
     .sub-tabs{display:flex;gap:0;border-bottom:1px solid rgba(0,0,0,0.1);margin-bottom:40px;}
-    .sub-tab{padding:10px 22px;font-family:var(--font);font-size:12px;font-weight:500;letter-spacing:0.04em;color:#aaa;background:transparent;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer;transition:color 0.15s,border-color 0.15s;}
+    .sub-tab{padding:10px 22px;font-family:var(--font);font-size:12px;font-weight:500;letter-spacing:0.04em;color:#777;background:transparent;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer;transition:color 0.15s,border-color 0.15s;}
     .sub-tab.active{color:#111;border-bottom-color:var(--uc-color,var(--blue));}
     .sub-tab:hover:not(.active){color:#555;}
 
@@ -78,18 +78,18 @@
     .uc-step{display:flex;gap:20px;padding:15px 0;border-bottom:1px solid rgba(0,0,0,0.07);}
     .uc-step:last-child{border-bottom:none;}
     .uc-step-num{font-family:var(--font-display);font-weight:800;font-size:20px;color:var(--uc-color,var(--blue));min-width:26px;line-height:1.3;}
-    .uc-step-text{font-size:13px;font-weight:300;color:#444;line-height:1.75;}
+    .uc-step-text{font-size:13px;font-weight:400;color:#333;line-height:1.75;}
     .uc-step-text strong{color:#111;font-weight:500;}
     .uc-outcome-block{margin-top:24px;background:#fff;border-left:3px solid var(--uc-color,var(--blue));padding:16px 18px;}
     .uc-outcome-label{font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--uc-color,var(--blue));margin-bottom:6px;}
-    .uc-outcome-block p{font-size:13px;font-weight:300;color:#555;line-height:1.65;}
+    .uc-outcome-block p{font-size:13px;font-weight:400;color:#444;line-height:1.65;}
     .brand-link{color:var(--uc-color,var(--blue));text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px;opacity:0.9;transition:opacity 0.15s;}
     .brand-link:hover{opacity:1;}
 
     /* ── DEMO STYLES ── */
     .demo-wrap{background:var(--dark);border-radius:0;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 4px 28px rgba(0,0,0,0.24);}
     .demo-hdr{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid rgba(255,255,255,0.07);}
-    .demo-hdr-lbl{font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(255,255,255,0.28);}
+    .demo-hdr-lbl{font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(255,255,255,0.52);}
     .demo-dots{display:flex;gap:5px;}
     .demo-dot{width:6px;height:6px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.22);background:transparent;padding:0;cursor:pointer;transition:all 0.15s;}
     .demo-dot.active{background:#0078CE;border-color:#0078CE;}
@@ -97,8 +97,8 @@
     .demo-screen{position:absolute;inset:0;opacity:0;transition:opacity 0.25s;pointer-events:none;overflow-y:auto;}
     .demo-screen.active{opacity:1;pointer-events:auto;}
     .demo-ftr{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-top:1px solid rgba(255,255,255,0.07);}
-    .demo-step{font-size:11px;color:rgba(255,255,255,0.3);}
-    .d-prev,.d-next{font-size:12px;font-weight:500;padding:5px 14px;border-radius:3px;border:1.5px solid rgba(255,255,255,0.18);background:transparent;color:rgba(255,255,255,0.6);cursor:pointer;transition:all 0.15s;font-family:var(--font);}
+    .demo-step{font-size:11px;color:rgba(255,255,255,0.52);}
+    .d-prev,.d-next{font-size:12px;font-weight:500;padding:5px 14px;border-radius:3px;border:1.5px solid rgba(255,255,255,0.25);background:transparent;color:rgba(255,255,255,0.78);cursor:pointer;transition:all 0.15s;font-family:var(--font);}
     .d-prev:disabled{opacity:0.28;cursor:not-allowed;}
     .d-next{background:#0078CE;border-color:#0078CE;color:#fff;}
     .d-next:disabled{opacity:0.5;cursor:not-allowed;}
@@ -108,7 +108,7 @@
     .demo-phone-screen{background:#fff;border-radius:9px;overflow:hidden;min-height:260px;}
     .demo-split{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px;min-height:280px;}
     .demo-pane{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;}
-    .demo-pane-label{font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.28);padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.07);flex-shrink:0;}
+    .demo-pane-label{font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.52);padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.07);flex-shrink:0;}
     .demo-pane-content{padding:10px 12px;flex:1;overflow-y:auto;}
     .demo-map-toggle{display:flex;gap:0;}
     .demo-toggle-btn{padding:4px 14px;font-size:11px;font-weight:500;background:transparent;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.5);cursor:pointer;transition:all 0.15s;font-family:var(--font);}
@@ -120,7 +120,7 @@
     .demo-map-stats{display:flex;gap:8px;}
     .map-stat{flex:1;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:3px;padding:8px 10px;text-align:center;}
     .map-stat-num{font-size:20px;font-weight:700;line-height:1;margin-bottom:3px;transition:color 0.4s;}
-    .map-stat-lbl{font-size:9px;text-transform:uppercase;letter-spacing:0.08em;color:rgba(255,255,255,0.35);}
+    .map-stat-lbl{font-size:9px;text-transform:uppercase;letter-spacing:0.08em;color:rgba(255,255,255,0.55);}
 
     /* PARTNERS */
     .partners{background:#fff;padding:96px 0;border-top:3px solid var(--blue);}
@@ -136,12 +136,12 @@
     .contact{background:var(--dark);padding:100px 0;}
     .contact-inner{max-width:var(--max);margin:0 auto;padding:0 48px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
     .contact-text h2{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(40px,5vw,68px);line-height:0.92;color:#fff;margin-bottom:20px;}
-    .contact-text h2 em{font-style:italic;text-transform:none;color:rgba(255,255,255,0.38);}
-    .contact-text p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.42);line-height:1.75;}
+    .contact-text h2 em{font-style:italic;text-transform:none;color:rgba(255,255,255,0.62);}
+    .contact-text p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.70);line-height:1.75;}
     .contact-form{display:flex;flex-direction:column;gap:14px;}
     .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
     .form-field{display:flex;flex-direction:column;gap:6px;}
-    .form-field label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.32);}
+    .form-field label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.55);}
     .form-field input,.form-field textarea{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:var(--font);font-size:14px;padding:11px 14px;outline:none;transition:border-color 0.15s;}
     .form-field input:focus,.form-field textarea:focus{border-color:var(--blue);}
     .form-field input::placeholder,.form-field textarea::placeholder{color:rgba(255,255,255,0.18);}
@@ -155,7 +155,7 @@
     .footer{background:#000;padding:28px 0 16px;}
     .footer-inner{max-width:var(--max);margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
     .footer-brand{display:flex;flex-direction:column;align-items:flex-start;}
-    .footer-brand p{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.2);margin-top:0;margin-bottom:8px;}
+    .footer-brand p{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-top:0;margin-bottom:8px;}
     .footer-partner-logos{display:flex;align-items:center;gap:16px;}
     .footer-partner-logo{display:block;object-fit:contain;filter:brightness(0) invert(1);opacity:0.35;transition:opacity 0.2s;}
     .footer-partner-logo:hover{opacity:0.6;}
@@ -163,7 +163,7 @@
     .footer-nav{display:flex;flex-direction:row;gap:28px;align-items:center;}
     .footer-nav a{font-size:12px;color:rgba(255,255,255,0.6);transition:color 0.15s;}
     .footer-nav a:hover{color:#fff;}
-    .footer-bottom{max-width:var(--max);margin:0 auto;padding:14px 48px 0;border-top:1px solid rgba(255,255,255,0.07);font-size:12px;color:rgba(255,255,255,0.25);}
+    .footer-bottom{max-width:var(--max);margin:0 auto;padding:14px 48px 0;border-top:1px solid rgba(255,255,255,0.07);font-size:12px;color:rgba(255,255,255,0.45);}
 
     /* ON THE FABRIC SECTION */
     .fabric-section{background:#050d18;padding:96px 0;border-top:1px solid rgba(0,120,206,0.18);}
@@ -171,16 +171,16 @@
     .fabric-intro{margin-bottom:64px;border-bottom:1px solid rgba(255,255,255,0.07);padding-bottom:56px;}
     .fabric-intro .eyebrow{color:var(--blue);}
     .fabric-intro h2{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(44px,6vw,80px);line-height:0.92;color:#fff;margin-bottom:20px;}
-    .fabric-intro p{font-size:16px;font-weight:300;color:rgba(255,255,255,0.45);max-width:580px;line-height:1.75;}
+    .fabric-intro p{font-size:16px;font-weight:300;color:rgba(255,255,255,0.72);max-width:580px;line-height:1.75;}
     .fabric-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(255,255,255,0.08);}
     .fabric-card{padding:48px;border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;}
     .fabric-card:last-child{border-right:none;}
     .fabric-card-eyebrow{margin-bottom:24px;}
     .fabric-logo{height:44px;width:auto;display:block;opacity:0.88;}
     .fabric-card-name{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(36px,4vw,56px);line-height:0.9;color:#fff;margin-bottom:16px;}
-    .fabric-card-tagline{font-size:14px;font-weight:300;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.07);padding-bottom:24px;}
+    .fabric-card-tagline{font-size:14px;font-weight:300;color:rgba(255,255,255,0.78);line-height:1.75;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.07);padding-bottom:24px;}
     .fabric-card-points{display:flex;flex-direction:column;gap:16px;flex:1;margin-bottom:32px;}
-    .fabric-card-point{font-size:13px;font-weight:300;color:rgba(255,255,255,0.48);line-height:1.75;}
+    .fabric-card-point{font-size:13px;font-weight:300;color:rgba(255,255,255,0.72);line-height:1.75;}
     .fabric-card-link{font-size:12px;font-weight:500;letter-spacing:0.06em;color:var(--blue);display:inline-flex;align-items:center;gap:4px;transition:color 0.15s;align-self:flex-start;}
     .fabric-card-link:hover{color:#5bb3f5;}
 
@@ -227,7 +227,7 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 116" aria-label="Urban Web">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 116" aria-label="Mobility Web">
             <polygon points="57,12 96.8,35 96.8,81 57,104 17.2,81 17.2,35" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1.7"/>
             <line x1="57" y1="58" x2="57"   y2="12"  stroke="#0078CE" stroke-width="1.9"/>
             <line x1="57" y1="58" x2="57"   y2="104" stroke="#0078CE" stroke-width="1.9"/>
@@ -242,14 +242,13 @@
             <circle cx="17.2" cy="81"  r="4.8" fill="rgba(255,255,255,0.85)"/>
             <circle cx="17.2" cy="35"  r="4.8" fill="rgba(255,255,255,0.85)"/>
             <circle cx="57"   cy="58"  r="5.8" fill="rgba(255,255,255,0.9)"/>
-            <text x="114" y="60"  font-family="Outfit,sans-serif" font-weight="700" font-size="46" fill="white">URBAN</text>
-            <text x="114" y="100" font-family="Outfit,sans-serif" font-weight="700" font-size="46" fill="white">WEB</text>
-            <text x="116" y="112" font-family="Outfit,sans-serif" font-weight="400" font-size="10.5" fill="#0078CE" letter-spacing="2.5">OPEN MOBILITY NETWORK</text>
+            <text x="114" y="70"  font-family="Outfit,sans-serif" font-weight="700" font-size="34" fill="white">MOBILITY WEB</text>
+            <text x="114" y="86"  font-family="Outfit,sans-serif" font-weight="400" font-size="10.5" fill="#0078CE" textLength="240" lengthAdjust="spacing">OPEN MOBILITY NETWORK</text>
           </svg>
         </a>
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="urban-web-c40-preview.html" class="nav-link">What is Urban Web</a>
+        <a href="urban-web-c40-preview.html" class="nav-link">What is Mobility Web</a>
         <a href="use-cases-c40-preview.html" class="nav-link active">Use Cases</a>
       </div>
       <a href="#contact" class="btn-nav">Get in touch</a>
@@ -263,7 +262,7 @@
     <div class="page-header-inner">
       <span class="eyebrow">Use Cases</span>
       <h1>How does a city connect to shape what comes next?</h1>
-      <p>Urban Web is the infrastructure of connection. These are the conditions it creates at every scale of city life.</p>
+      <p>Mobility Web is the infrastructure of connection. These are the conditions it creates at every scale of city life.</p>
     </div>
   </div>
 
@@ -338,14 +337,14 @@
               <div class="uc-scenario">
                 <h3>An employer and their commuters</h3>
                 <div class="uc-steps">
-                  <div class="uc-step"><div class="uc-step-num">01</div><div class="uc-step-text"><strong>Mobility as a benefit.</strong> An employer issues a commuting allowance through <a href="https://vouch.finance" target="_blank" rel="noopener" class="brand-link">Vouch Finance</a> — purpose-bound credit spendable across any Urban Web-connected service, automatically restricted to sustainable modes, capped monthly, and expiring if unused. No agreements with individual operators. No payment infrastructure to build.</div></div>
-                  <div class="uc-step"><div class="uc-step-num">02</div><div class="uc-step-text"><strong>Real emissions data.</strong> Because Urban Web tracks the full journey across operators — not just a single segment — the employer sees actual carbon impact. Not estimated from surveys. Verified from trips.</div></div>
-                  <div class="uc-step"><div class="uc-step-num">03</div><div class="uc-step-text"><strong>Carbon rewards that verify themselves.</strong> When an employee chooses transit over a car, Urban Web verifies the journey and a climate credit releases automatically — purpose-bound to future mobility costs, encouraging the habit rather than rewarding a one-off. A city or climate fund can administer the same logic across an entire district.</div></div>
+                  <div class="uc-step"><div class="uc-step-num">01</div><div class="uc-step-text"><strong>Mobility as a benefit.</strong> An employer issues a commuting allowance through <a href="https://vouch.finance" target="_blank" rel="noopener" class="brand-link">Vouch Finance</a> — purpose-bound credit spendable across any Mobility Web-connected service, automatically restricted to sustainable modes, capped monthly, and expiring if unused. No agreements with individual operators. No payment infrastructure to build.</div></div>
+                  <div class="uc-step"><div class="uc-step-num">02</div><div class="uc-step-text"><strong>Real emissions data.</strong> Because Mobility Web tracks the full journey across operators — not just a single segment — the employer sees actual carbon impact. Not estimated from surveys. Verified from trips.</div></div>
+                  <div class="uc-step"><div class="uc-step-num">03</div><div class="uc-step-text"><strong>Carbon rewards that verify themselves.</strong> When an employee chooses transit over a car, Mobility Web verifies the journey and a climate credit releases automatically — purpose-bound to future mobility costs, encouraging the habit rather than rewarding a one-off. A city or climate fund can administer the same logic across an entire district.</div></div>
                   <div class="uc-step"><div class="uc-step-num">04</div><div class="uc-step-text"><strong>Collective reporting.</strong> Multiple employers pool verified mobility data to demonstrate district-level climate progress — without sharing individual user information. A real evidence base, built from trips rather than surveys.</div></div>
                 </div>
                 <div class="uc-outcome-block">
                   <div class="uc-outcome-label">The shift</div>
-                  <p>The employer becomes an issuer of mobility value — without building any payment infrastructure. Urban Web provides the verified journey data. Vouch turns it into programmable benefit and reward. Climate commitments stop being aspirational and become measurable.</p>
+                  <p>The employer becomes an issuer of mobility value — without building any payment infrastructure. Mobility Web provides the verified journey data. Vouch turns it into programmable benefit and reward. Climate commitments stop being aspirational and become measurable.</p>
                 </div>
               </div>
               <div id="demo-organisation"></div>
@@ -446,10 +445,10 @@
                 <div class="uc-scenario">
                   <h3>A driver's record, everywhere</h3>
                   <div class="uc-steps">
-                    <div class="uc-step"><div class="uc-step-num">01</div><div class="uc-step-text"><strong>Skills that travel.</strong> A transit driver's qualifications, certifications, and employment history are verified and stored on Urban Web — not with any single employer.</div></div>
+                    <div class="uc-step"><div class="uc-step-num">01</div><div class="uc-step-text"><strong>Skills that travel.</strong> A transit driver's qualifications, certifications, and employment history are verified and stored on Mobility Web — not with any single employer.</div></div>
                     <div class="uc-step"><div class="uc-step-num">02</div><div class="uc-step-text"><strong>Instant discovery.</strong> When a driver changes operators or cities, their full record is available immediately. No certificates to chase. No delays in hiring.</div></div>
                     <div class="uc-step"><div class="uc-step-num">03</div><div class="uc-step-text"><strong>Cities see the picture.</strong> Planners see aggregate workforce readiness in real time — EV certifications, gaps, training needs — before they become crises.</div></div>
-                    <div class="uc-step"><div class="uc-step-num">04</div><div class="uc-step-text"><strong>Benefits that follow the credential.</strong> A driver's welfare package — healthcare cover, education credits, fuel allowance — is issued through <a href="https://vouch.finance" target="_blank" rel="noopener" class="brand-link">Vouch Finance</a>, linked to their verified Urban Web credential. When they switch operators, the benefit moves with them. EV upskilling credits are bound to accredited training providers and release only when certification is verified on Urban Web — a city's investment in the transition, with the condition built into the money.</div></div>
+                    <div class="uc-step"><div class="uc-step-num">04</div><div class="uc-step-text"><strong>Benefits that follow the credential.</strong> A driver's welfare package — healthcare cover, education credits, fuel allowance — is issued through <a href="https://vouch.finance" target="_blank" rel="noopener" class="brand-link">Vouch Finance</a>, linked to their verified Mobility Web credential. When they switch operators, the benefit moves with them. EV upskilling credits are bound to accredited training providers and release only when certification is verified on Mobility Web — a city's investment in the transition, with the condition built into the money.</div></div>
                   </div>
                   <div class="uc-outcome-block">
                     <div class="uc-outcome-label">The shift</div>
@@ -481,14 +480,14 @@
                 <div class="uc-scenario">
                   <h3>A city redirecting peak-hour demand</h3>
                   <div class="uc-steps">
-                    <div class="uc-step"><div class="uc-step-num">01</div><div class="uc-step-text"><strong>The city finally sees the whole picture.</strong> Urban Web shows every operator, every mode, every route simultaneously — not service by service, but the whole network at once. When a corridor saturates, the city can act on what is actually happening, not what a survey said last year.</div></div>
+                    <div class="uc-step"><div class="uc-step-num">01</div><div class="uc-step-text"><strong>The city finally sees the whole picture.</strong> Mobility Web shows every operator, every mode, every route simultaneously — not service by service, but the whole network at once. When a corridor saturates, the city can act on what is actually happening, not what a survey said last year.</div></div>
                     <div class="uc-step"><div class="uc-step-num">02</div><div class="uc-step-text"><strong>Incentives that redirect demand in real time.</strong> When congestion hits, the city issues mode-substitution credits through <a href="https://vouch.finance" target="_blank" rel="noopener" class="brand-link">Vouch Finance</a> — automatically activated, bound to the alternative mode, valid for that window only. Off-peak journeys earn more. New transit corridors get launch-period credits. The city shapes demand without touching any operator's fare structure.</div></div>
-                    <div class="uc-step"><div class="uc-step-num">03</div><div class="uc-step-text"><strong>Budget that only pays for results.</strong> The incentive budget is committed to <a href="https://pincer.network" target="_blank" rel="noopener" class="brand-link">Pincer</a> escrow. It releases only when Urban Web verifies the mode switch happened. Commuters see the guaranteed credit before they decide. The city's budget pays for verified behaviour, not intentions.</div></div>
+                    <div class="uc-step"><div class="uc-step-num">03</div><div class="uc-step-text"><strong>Budget that only pays for results.</strong> The incentive budget is committed to <a href="https://pincer.network" target="_blank" rel="noopener" class="brand-link">Pincer</a> escrow. It releases only when Mobility Web verifies the mode switch happened. Commuters see the guaranteed credit before they decide. The city's budget pays for verified behaviour, not intentions.</div></div>
                     <div class="uc-step"><div class="uc-step-num">04</div><div class="uc-step-text"><strong>Records that earn better terms.</strong> Commuters who consistently choose sustainable modes build a verified proof record. Better credit rates follow automatically over time — a direct economic return on consistent behaviour, with no platform required to grant it.</div></div>
                   </div>
                   <div class="uc-outcome-block">
                     <div class="uc-outcome-label">The shift</div>
-                    <p>Congestion pricing takes money away. This gives value back — targeted, provable, and measurable. Urban Web sees the behaviour. Vouch shapes the incentive. Pincer proves it happened. Every pound of the city's budget produces a verified trip.</p>
+                    <p>Congestion pricing takes money away. This gives value back — targeted, provable, and measurable. Mobility Web sees the behaviour. Vouch shapes the incentive. Pincer proves it happened. Every pound of the city's budget produces a verified trip.</p>
                   </div>
                 </div>
                 <div id="demo-city-congestion"></div>
@@ -508,11 +507,11 @@
       <div class="partners-grid">
         <div class="partner-block">
           <a href="https://networksforhumanity.org" target="_blank" rel="noopener"><img src="brand_assets/NFH Logo.png" alt="Networks for Humanity" class="partner-logo"></a>
-          <p>Networks for Humanity (NFH) is a global non-profit initiative with a bold vision to provide open, interoperable and decentralized digital infrastructure that enables broader access and participation in the digital economy. The NFH Fabric powers Urban Web, providing the open standard that any mobility service can connect to.</p>
+          <p>Networks for Humanity (NFH) is a global non-profit initiative with a bold vision to provide open, interoperable and decentralized digital infrastructure that enables broader access and participation in the digital economy. The NFH Fabric powers Mobility Web, providing the open standard that any mobility service can connect to.</p>
         </div>
         <div class="partner-block">
           <a href="https://wri.org" target="_blank" rel="noopener"><img src="brand_assets/World_Resources_Institute_logo.svg.png" alt="World Resources Institute" class="partner-logo"></a>
-          <p>WRI is a global research organisation working to improve people's lives, protect nature and stabilise the climate. They bring city relationships, policy expertise, and on-the-ground research that makes Urban Web work in practice.</p>
+          <p>WRI is a global research organisation working to improve people's lives, protect nature and stabilise the climate. They bring city relationships, policy expertise, and on-the-ground research that makes Mobility Web work in practice.</p>
         </div>
       </div>
     </div>
@@ -555,12 +554,12 @@
       </div>
       <nav class="footer-nav">
         <a href="index.html">Home</a>
-        <a href="urban-web-c40-preview.html">What is Urban Web</a>
+        <a href="urban-web-c40-preview.html">What is Mobility Web</a>
         <a href="use-cases-c40-preview.html">Use Cases</a>
         <a href="#contact">Get in touch</a>
       </nav>
     </div>
-    <div class="footer-bottom">© 2026 Urban Web Program</div>
+    <div class="footer-bottom">© 2026 Mobility Web Program</div>
   </footer>
 
   <script>
@@ -633,9 +632,9 @@
 
     /* Organisation — split, 3 steps */
     organisation:[
-      {left:{lbl:'Employer — Meridian Group',items:[sph.lbl('Mobility benefit policy (Vouch)')+sph.row('Credit per employee','£120 / month')+sph.row('Modes covered','Transit, micro-mobility, shared ride')+sph.row('Restricted','Ride-hail during peak hours','#ff6b6b')+sph.row('Cap','Auto-resets monthly · unused expires'),sph.note('Published once. Every Urban Web-connected operator picks it up — no bilateral agreements.')]},right:{lbl:'Employee — Alex K.',items:[sph.lbl('My mobility credit')+sph.row('Available this month','£120.00','#2A9E72')+sph.row('Spend on','Transit, cycle, shared ride')+sph.row('Not on','Ride-hail · Mon–Fri 07–09, 17–19','#ff6b6b'),sph.note('One credit, every eligible operator in the city. No separate apps or accounts.')]}},
-      {left:{lbl:'Alex K. — verified trip',items:[sph.lbl('Journey completed')+sph.row('Mode','Bus 47 · 6.1 km')+sph.row('Vouch credit used','£2.40')+sph.row('Policy check','Qualifying mode ✓','#2A9E72')+sph.row('CO₂ avoided','1.4 kg (verified)','#2A9E72'),sph.note('Urban Web verifies the full journey, not just the payment tap. Carbon impact measured, not estimated.')]},right:{lbl:'Carbon reward — auto-released',items:[sph.lbl('Outcome-triggered credit')+sph.row('Climate reward','£0.84 released','#2A9E72')+sph.row('Type','Purpose-bound — mobility only')+sph.row('Basis','Verified avoided car trip')+sph.row('Stackable','Yes — on top of base benefit','#2A9E72'),sph.note('Released when the journey is verified. Redeemable on future mobility — building the habit.')]}},
-      {left:{lbl:'Meridian Group — ESG dashboard',items:[sph.lbl('This quarter')+sph.row('Verified commute trips','3,847')+sph.row('CO₂ avoided','2.3 tonnes','#2A9E72')+sph.row('Data quality','Urban Web verified','#2A9E72')+sph.row('vs. last year (survey)','41% — estimated','#D4782A'),sph.note('Real numbers, not estimates. The data exists because the infrastructure does.')]},right:{lbl:'City Transport Authority',items:[sph.lbl('District-level view')+sph.row('Employers sharing data','312')+sph.row('On transit (verified)','48%','#2A9E72')+sph.row('Data quality','Verified trips — not surveys')+sph.row('Modal shift since 2022','+11 ppts','#2A9E72'),sph.note('No individual data shared. The city sees the aggregate — evidence for policy, without surveillance.')]}},
+      {left:{lbl:'Employer — Meridian Group',items:[sph.lbl('Mobility benefit policy (Vouch)')+sph.row('Credit per employee','£120 / month')+sph.row('Modes covered','Transit, micro-mobility, shared ride')+sph.row('Restricted','Ride-hail during peak hours','#ff6b6b')+sph.row('Cap','Auto-resets monthly · unused expires'),sph.note('Published once. Every Mobility Web-connected operator picks it up — no bilateral agreements.')]},right:{lbl:'Employee — Alex K.',items:[sph.lbl('My mobility credit')+sph.row('Available this month','£120.00','#2A9E72')+sph.row('Spend on','Transit, cycle, shared ride')+sph.row('Not on','Ride-hail · Mon–Fri 07–09, 17–19','#ff6b6b'),sph.note('One credit, every eligible operator in the city. No separate apps or accounts.')]}},
+      {left:{lbl:'Alex K. — verified trip',items:[sph.lbl('Journey completed')+sph.row('Mode','Bus 47 · 6.1 km')+sph.row('Vouch credit used','£2.40')+sph.row('Policy check','Qualifying mode ✓','#2A9E72')+sph.row('CO₂ avoided','1.4 kg (verified)','#2A9E72'),sph.note('Mobility Web verifies the full journey, not just the payment tap. Carbon impact measured, not estimated.')]},right:{lbl:'Carbon reward — auto-released',items:[sph.lbl('Outcome-triggered credit')+sph.row('Climate reward','£0.84 released','#2A9E72')+sph.row('Type','Purpose-bound — mobility only')+sph.row('Basis','Verified avoided car trip')+sph.row('Stackable','Yes — on top of base benefit','#2A9E72'),sph.note('Released when the journey is verified. Redeemable on future mobility — building the habit.')]}},
+      {left:{lbl:'Meridian Group — ESG dashboard',items:[sph.lbl('This quarter')+sph.row('Verified commute trips','3,847')+sph.row('CO₂ avoided','2.3 tonnes','#2A9E72')+sph.row('Data quality','Mobility Web verified','#2A9E72')+sph.row('vs. last year (survey)','41% — estimated','#D4782A'),sph.note('Real numbers, not estimates. The data exists because the infrastructure does.')]},right:{lbl:'City Transport Authority',items:[sph.lbl('District-level view')+sph.row('Employers sharing data','312')+sph.row('On transit (verified)','48%','#2A9E72')+sph.row('Data quality','Verified trips — not surveys')+sph.row('Modal shift since 2022','+11 ppts','#2A9E72'),sph.note('No individual data shared. The city sees the aggregate — evidence for policy, without surveillance.')]}},
     ],
 
     /* Neighbourhood space — handled by parking canvas */
@@ -648,8 +647,8 @@
         card(`${lbl('Corporate coaches · 8 vehicles')}${row('Idle window','Weekends + evenings')}${row('Visible to city','No','#C0392B')}`,C.amber)+
         `<div style="font-size:10px;color:${C.t3};line-height:1.55;margin-top:4px">31 vehicles. Paid for. Invisible to the city and its residents.</div>`
       ),
-      hdr('Joining Urban Web')+body(
-        card(`${lbl('School bus fleet — now connected')}${row('Connection','Urban Web standard')}${row('Availability published','09:00 – 14:30 daily')}${row('Visible to','Any operator or platform')}`,C.green)+
+      hdr('Joining Mobility Web')+body(
+        card(`${lbl('School bus fleet — now connected')}${row('Connection','Mobility Web standard')}${row('Availability published','09:00 – 14:30 daily')}${row('Visible to','Any operator or platform')}`,C.green)+
         chk('Joined once — no bilateral agreements',C.green)+
         chk('Any operator can discover and book',C.green)+
         chk('Revenue generated during idle hours',C.green)+
@@ -680,7 +679,7 @@
       hdr('Driver profile · Marcus B.')+body(
         card(`${lbl('Verified credentials')}${chk('Class D Commercial licence — verified',C.green)}${chk('EV Level 2 certification — 2024',C.green)}${chk('Defensive driving — 5 yrs',C.green)}`,C.green)+
         card(`${lbl('Employment history')}${row('CityLine Transit','2019 – 2023')}${row('MetroBus Co','2023 – present')}`,C.t2)+
-        `<div style="font-size:10px;color:${C.t3};line-height:1.55;margin-top:4px">All records verified on Urban Web. Portable across every employer in every city.</div>`
+        `<div style="font-size:10px;color:${C.t3};line-height:1.55;margin-top:4px">All records verified on Mobility Web. Portable across every employer in every city.</div>`
       ),
       hdr('Changing employer')+body(
         card(`${lbl('Record transfer')}${row('From','MetroBus Co')}${row('To','GreenFleet Transit')}${row('Status','Instant — no paperwork',C.green)}${row('Credentials','All verified, all portable')}`,C.green)+
@@ -695,8 +694,8 @@
         `<div style="font-size:10px;color:${C.t3};line-height:1.55;margin-top:4px">The city sees its workforce gap before it becomes a crisis — not after.</div>`
       ),
       hdr('Driver welfare · Marcus B.')+body(
-        card(`${lbl('Benefit package — Vouch Finance')}${row('Healthcare cover','Active — any operator',C.green)}${row('EV upskilling credit','£150 available',C.green)}${row('Fuel allowance','£40 / month',C.green)}${row('Linked to','Urban Web credential',C.purple)}`,C.purple)+
-        chk('Portable across every Urban Web operator',C.green)+
+        card(`${lbl('Benefit package — Vouch Finance')}${row('Healthcare cover','Active — any operator',C.green)}${row('EV upskilling credit','£150 available',C.green)}${row('Fuel allowance','£40 / month',C.green)}${row('Linked to','Mobility Web credential',C.purple)}`,C.purple)+
+        chk('Portable across every Mobility Web operator',C.green)+
         chk('EV credit bound to accredited providers only',C.green)+
         `<div style="font-size:10px;color:${C.t3};line-height:1.55;margin-top:4px">When Marcus switches operators, nothing changes. The benefit is his — linked to his credential, not his employer.</div>`
       ),
@@ -712,7 +711,7 @@
     /* Demand Management / Congestion — split, 3 steps */
     congestion:[
       {left:{lbl:'City transport authority — today',items:[sph.lbl('Peak hour visibility')+sph.row('A12 corridor','Congested — no detail','#ff6b6b')+sph.row('Mode split data','Annual survey only','#ff6b6b')+sph.row('Real-time view across operators','None','#ff6b6b'),sph.note('One operator at a time. No whole-network view. No basis for acting as congestion builds.')]},right:{lbl:'Demand management budget',items:[sph.lbl('Current approach')+sph.row('Budget','£2.4M / year')+sph.row('Disbursed','Quarterly, in advance','#ff6b6b')+sph.row('Tied to verified outcomes','No','#ff6b6b')+sph.row('Adjustable in real time','No','#ff6b6b'),sph.note('Paid before behaviour changes. No targeting, no proof, no way to know if it worked.')]}},
-      {left:{lbl:'City — Urban Web view · 08:31',items:[sph.lbl('A12 — congestion confirmed')+sph.row('Live mode split','Across all operators','#2A9E72')+sph.row('Vouch credit issued','£1.40 · Tube Line 2 only')+sph.row('Bound to','Alternative mode — this window')+sph.row('Budget committed','Only on verified switch','#2A9E72'),sph.note('Costs nothing until Urban Web confirms a switch. No behaviour = no spend.')]},right:{lbl:'Commuter · Priya K. — 08:31',items:[sph.lbl('Received on her app')+sph.row('A12','Congested — avoid','#ff6b6b')+sph.row('Tube Line 2','26 min · alternative','#2A9E72')+sph.row('Credit if you switch','£1.40','#2A9E72')+sph.row('Payment','Held in escrow — guaranteed','#2A9E72'),sph.note('The money is already set aside for her. A guarantee, not a promise.')]}},
+      {left:{lbl:'City — Mobility Web view · 08:31',items:[sph.lbl('A12 — congestion confirmed')+sph.row('Live mode split','Across all operators','#2A9E72')+sph.row('Vouch credit issued','£1.40 · Tube Line 2 only')+sph.row('Bound to','Alternative mode — this window')+sph.row('Budget committed','Only on verified switch','#2A9E72'),sph.note('Costs nothing until Mobility Web confirms a switch. No behaviour = no spend.')]},right:{lbl:'Commuter · Priya K. — 08:31',items:[sph.lbl('Received on her app')+sph.row('A12','Congested — avoid','#ff6b6b')+sph.row('Tube Line 2','26 min · alternative','#2A9E72')+sph.row('Credit if you switch','£1.40','#2A9E72')+sph.row('Payment','Held in escrow — guaranteed','#2A9E72'),sph.note('The money is already set aside for her. A guarantee, not a promise.')]}},
       {left:{lbl:'City — 09:30 · Peak closed',items:[sph.lbl('What the budget produced')+sph.row('Verified mode switches','2,840','#2A9E72')+sph.row('Total released on proof','£3,976','#2A9E72')+sph.row('Budget wasted','£0','#2A9E72')+sph.row('Congestion reduction on A12','23%','#2A9E72'),sph.note('Every pound was tied to a verified trip. The budget didn\'t run out — it performed.')]},right:{lbl:'Commuter · Priya K.',items:[sph.lbl('Her proof record')+sph.row('Trips on transit (45 days)','38 of 45')+sph.row('Current credit rate','Standard')+sph.row('Next milestone','50 verified trips')+sph.row('Rate at milestone','Enhanced — +40%','#2A9E72'),sph.note('Consistent behaviour earns better terms automatically. No application, no gatekeeper.')]}},
     ],
   };
